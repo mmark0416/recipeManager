@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.recipeManager.controllers.AppController">
+   <children>
+      <Button layoutX="432.0" layoutY="521.0" mnemonicParsing="false" onAction="#clickLogout" prefHeight="30.0" prefWidth="126.0" text="Kijelentkezés" />
+      <Button layoutX="432.0" layoutY="356.0" mnemonicParsing="false" onAction="#clickEdit" prefHeight="39.0" prefWidth="126.0" text="Szerkesztés">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="432.0" layoutY="443.0" mnemonicParsing="false" onAction="#clickDelete" prefHeight="39.0" prefWidth="126.0" text="Törlés">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="432.0" layoutY="270.0" mnemonicParsing="false" onAction="#clickAdd" prefHeight="39.0" prefWidth="126.0" text="Hozzáadás">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="10.0" prefHeight="35.0" prefWidth="138.0" text="Receptek">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="432.0" layoutY="14.0" prefHeight="53.0" prefWidth="126.0" text="Recept" wrapText="true">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="415.0" layoutY="57.0" prefHeight="53.0" prefWidth="161.0" text="manager">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeLbl" alignment="CENTER" layoutX="426.0" layoutY="117.0" prefHeight="27.0" prefWidth="138.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView" layoutX="21.0" layoutY="57.0" prefHeight="525.0" prefWidth="376.0" />
+      <Button layoutX="432.0" layoutY="191.0" mnemonicParsing="false" onAction="#clickOpen" prefHeight="39.0" prefWidth="126.0" text="Megnyitás">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="idSelectedRecipeErrorLbl" alignment="CENTER" layoutX="408.0" layoutY="160.0" prefHeight="20.0" prefWidth="175.0" textFill="#da0606" />
+      <Button layoutX="432.0" layoutY="556.0" mnemonicParsing="false" onAction="#clickUserDelete" prefHeight="30.0" prefWidth="126.0" text="Felhasználó törlése">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
