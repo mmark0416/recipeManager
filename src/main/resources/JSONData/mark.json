@@ -1,1 +1,15 @@
-{"username":"mark","password":"123","recipes":[{"name":"Babfőzelék","description":"A húsokat beáztatjuk 1-2 órára. Megtisztítjuk a tokoktól és más oda nem illő dolgoktól. A zöldségeket megtisztítjuk. Egy 5 literes edénybe pakoljuk a húsokat és a hagymát. Felengedjük vízzel. Először nagy lángon melegítjük, amíg fel nem forr, utána kis lángra vesszük, és sózzuk, borsozzuk. A zöldségeket feldaraboljuk. Ha a levesünk elforrta a habját, akkor belepakolhatjuk a zöldségeket és az összekötözött petrezselymet. A vége felé kivesszük a petrezselymet, a hagymát és paprikát. Hagyjuk tovább főni a levesü","ingredients":["1 kg tészta","1 kg csirke","1 kg só"]}]}
+{
+  "username": "mark",
+  "password": "123",
+  "recipes": [
+    {
+      "name": "Babfőzelék",
+      "description": "A húsokat beáztatjuk 1-2 órára. Megtisztítjuk a tokoktól és más oda nem illő dolgoktól. A zöldségeket megtisztítjuk. Egy 5 literes edénybe pakoljuk a húsokat és a hagymát. Felengedjük vízzel. Először nagy lángon melegítjük, amíg fel nem forr, utána kis lángra vesszük, és sózzuk, borsozzuk. A zöldségeket feldaraboljuk. Ha a levesünk elforrta a habját, akkor belepakolhatjuk a zöldségeket és az összekötözött petrezselymet. A vége felé kivesszük a petrezselymet, a hagymát és paprikát. Hagyjuk tovább főni a levesü",
+      "ingredients": [
+        "1 kg tészta",
+        "1 kg csirke",
+        "1 kg só"
+      ]
+    }
+  ]
+}

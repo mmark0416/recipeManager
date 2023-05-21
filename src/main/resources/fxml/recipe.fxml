@@ -22,7 +22,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="idDescription" alignment="TOP_LEFT" layoutX="274.0" layoutY="116.0" prefHeight="427.0" prefWidth="312.0" textAlignment="JUSTIFY" wrapText="true" />
+      <Label fx:id="idDescription" alignment="TOP_LEFT" layoutX="274.0" layoutY="119.0" prefHeight="424.0" prefWidth="312.0" textAlignment="JUSTIFY" wrapText="true" />
       <Button layoutX="400.0" layoutY="553.0" mnemonicParsing="false" onAction="#clickBack" text="Vissza" />
    </children>
 </AnchorPane>

@@ -1,6 +1,6 @@
 package com.recipeManager.models;
 
-import com.recipeManager.JSONDB.JSONDB;
+import com.recipeManager.JSONDB.JSON;
 import com.recipeManager.utilities.Recipe;
 import com.recipeManager.utilities.User;
 import javafx.collections.FXCollections;
@@ -11,7 +11,7 @@ import java.util.List;
 @lombok.Data
 public class AddRecipeModel {
     private ObservableList<String> ingredientLst = FXCollections.observableArrayList();
-    private JSONDB jsondb = new JSONDB();
+    private JSON jsondb = new JSON();
 
     public void deleteFromIngredients(String ingredient) {
         ingredientLst.remove(ingredient);

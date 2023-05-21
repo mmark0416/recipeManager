@@ -16,6 +16,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class RecipeController {
+    @FXML
     public Label idRecipeName;
     @FXML
     private Label idDescription;

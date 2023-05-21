@@ -24,13 +24,13 @@ public class AddRecipeController implements Initializable {
     @FXML
     public Label idIngredientErrorLbl;
     @FXML
-    private TextArea descriptionTextArea;
+    private TextArea idDescriptionTextArea;
     @FXML
-    private ListView ingredientListView;
+    private ListView idIngredientListView;
     @FXML
-    private TextField ingredientTextFld;
+    private TextField idIngredientTextFld;
     @FXML
-    private TextField recipeNameTextFld;
+    private TextField idRecipeNameTextFld;
     private AddRecipeModel model = new AddRecipeModel();
     private String username;
     private String selectedRecipe;
@@ -38,9 +38,9 @@ public class AddRecipeController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        ingredientListView.setItems(model.getIngredientLst());
-        ingredientListView.setOnMouseClicked(mouseEvent -> {
-            String selected = ingredientListView.getSelectionModel().getSelectedItems().toString();
+        idIngredientListView.setItems(model.getIngredientLst());
+        idIngredientListView.setOnMouseClicked(mouseEvent -> {
+            String selected = idIngredientListView.getSelectionModel().getSelectedItems().toString();
             this.selectedIngredient = selected.substring(1, selected.length() - 1);
         });
     }
@@ -50,8 +50,8 @@ public class AddRecipeController implements Initializable {
         if (selectedRecipe != null) {
             model.deleteOldRecipe(username, selectedRecipe);
         }
-        if ((!model.isRecipeName(username, recipeNameTextFld.getText())) || selectedRecipe != null) {
-            model.saveRecipe(username, descriptionTextArea.getText(), recipeNameTextFld.getText());
+        if ((!model.isRecipeName(username, idRecipeNameTextFld.getText())) || selectedRecipe != null) {
+            model.saveRecipe(username, idDescriptionTextArea.getText(), idRecipeNameTextFld.getText());
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/app.fxml"));
             Parent root = fxmlLoader.load();
             fxmlLoader.<AppController>getController().initUsername(username);
@@ -75,21 +75,21 @@ public class AddRecipeController implements Initializable {
 
     @FXML
     private void clickAdd(ActionEvent actionEvent) {
-        if (ingredientTextFld.getText().isEmpty()) {
+        if (idIngredientTextFld.getText().isEmpty()) {
             idIngredientErrorLbl.setText("Űres mező!");
         } else {
-            model.addToIngredients(ingredientTextFld.getText());
-            ingredientTextFld.clear();
+            model.addToIngredients(idIngredientTextFld.getText());
+            idIngredientTextFld.clear();
         }
     }
 
     @FXML
     private void clickDelete(ActionEvent actionEvent) {
-        if (ingredientTextFld.getText().isEmpty()) {
+        if (idIngredientTextFld.getText().isEmpty()) {
             model.deleteFromIngredients(selectedIngredient);
         } else {
-            model.deleteFromIngredients(ingredientTextFld.getText());
-            ingredientTextFld.clear();
+            model.deleteFromIngredients(idIngredientTextFld.getText());
+            idIngredientTextFld.clear();
         }
     }
 
@@ -101,8 +101,8 @@ public class AddRecipeController implements Initializable {
         this.username = username;
         this.selectedRecipe = selectedRecipe;
         String description = model.getDescrition(username, selectedRecipe);
-        descriptionTextArea.setText(description);
-        recipeNameTextFld.setText(selectedRecipe);
+        idDescriptionTextArea.setText(description);
+        idRecipeNameTextFld.setText(selectedRecipe);
         model.getIngredients(username, selectedRecipe);
 
     }

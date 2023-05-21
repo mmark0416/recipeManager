@@ -19,11 +19,12 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class AppController implements Initializable {
-    public Label idSelectedRecipeErrorLbl;
     @FXML
-    private ListView listView;
+    public Label idSelectedRecipeErrLbl;
     @FXML
-    private Label welcomeLbl;
+    private ListView idListView;
+    @FXML
+    private Label idWelcomeLbl;
     private String username;
     private String selectedRecipe;
     private ObservableList<String> recipeNames = FXCollections.observableArrayList();
@@ -31,11 +32,12 @@ public class AppController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        listView.setItems(recipeNames);
-        listView.setOnMouseClicked(mouseEvent -> {
-            String selected = listView.getSelectionModel().getSelectedItems().toString();
+        idListView.setItems(recipeNames);
+        idListView.setOnMouseClicked(mouseEvent -> {
+            String selected = idListView.getSelectionModel().getSelectedItems().toString();
             this.selectedRecipe = selected.substring(1, selected.length() - 1);
         });
+        idWelcomeLbl.setText("Szia " + username);
     }
 
     @FXML
@@ -57,7 +59,7 @@ public class AppController implements Initializable {
             stage.setScene(new Scene(root));
             stage.show();
         } else {
-            idSelectedRecipeErrorLbl.setText("Válasz ki egy receptet!");
+            idSelectedRecipeErrLbl.setText("Válasz ki egy receptet!");
         }
     }
 
@@ -72,7 +74,7 @@ public class AppController implements Initializable {
             stage.setScene(new Scene(root));
             stage.show();
         } else {
-            idSelectedRecipeErrorLbl.setText("Válasz ki egy receptet!");
+            idSelectedRecipeErrLbl.setText("Válasz ki egy receptet!");
         }
     }
 
@@ -96,8 +98,18 @@ public class AppController implements Initializable {
             stage.setScene(new Scene(root));
             stage.show();
         } else {
-            idSelectedRecipeErrorLbl.setText("Válasz ki egy receptet!");
+            idSelectedRecipeErrLbl.setText("Válasz ki egy receptet!");
         }
+    }
+
+    @FXML
+    public void clickCalc(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/calc.fxml"));
+        Parent root = fxmlLoader.load();
+        fxmlLoader.<CalcController>getController().initUsername(username);
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
     }
 
     public void initUsername(String username) {
@@ -131,4 +143,5 @@ public class AppController implements Initializable {
             stage.show();
         }
     }
+
 }

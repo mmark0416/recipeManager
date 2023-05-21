@@ -1,6 +1,6 @@
 package com.recipeManager.models;
 
-import com.recipeManager.JSONDB.JSONDB;
+import com.recipeManager.JSONDB.JSON;
 import com.recipeManager.utilities.Recipe;
 import com.recipeManager.utilities.User;
 
@@ -9,7 +9,7 @@ import java.util.List;
 
 @lombok.Data
 public class AppModel {
-    private JSONDB jsondb = new JSONDB();
+    private JSON jsondb = new JSON();
 
     public List<String> getRecipeNames(String username) {
         User user = jsondb.readJSON(username);

@@ -1,6 +1,6 @@
 package com.recipeManager.models;
 
-import com.recipeManager.JSONDB.JSONDB;
+import com.recipeManager.JSONDB.JSON;
 import com.recipeManager.utilities.Recipe;
 import com.recipeManager.utilities.User;
 
@@ -9,7 +9,7 @@ import java.util.List;
 
 @lombok.Data
 public class RegistrationModel {
-    private JSONDB jsondb = new JSONDB();
+    private JSON jsondb = new JSON();
 
     public boolean createUser(String username, String password) {
         if (!jsondb.isFileExists(username) && !password.isEmpty() && !username.isEmpty()) {

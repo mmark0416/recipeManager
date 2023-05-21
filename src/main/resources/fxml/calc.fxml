@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" stylesheets="@../css/CalcStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.recipeManager.controllers.CalcController">
+   <children>
+      <Pane layoutY="277.0" prefHeight="334.0" prefWidth="302.0" styleClass="mainPane">
+         <children>
+            <Pane fx:id="id7" layoutX="21.0" layoutY="90.0" onMouseClicked="#clickNumber" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="20.0" layoutY="15.0" text="7" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="id8" layoutX="89.0" layoutY="90.0" onMouseClicked="#clickNumber" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="20.0" layoutY="15.0" text="8" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="id9" layoutX="160.0" layoutY="90.0" onMouseClicked="#clickNumber" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="20.0" layoutY="15.0" text="9" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnPlus" layoutX="231.0" layoutY="90.0" onMouseClicked="#clickSymbol" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="20.0" layoutY="15.0" text="+" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="id4" layoutX="21.0" layoutY="149.0" onMouseClicked="#clickNumber" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="20.0" layoutY="15.0" text="4" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="id5" layoutX="89.0" layoutY="149.0" onMouseClicked="#clickNumber" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="20.0" layoutY="15.0" text="5" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="id6" layoutX="160.0" layoutY="149.0" onMouseClicked="#clickNumber" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="20.0" layoutY="15.0" text="6" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnMinus" layoutX="231.0" layoutY="149.0" onMouseClicked="#clickSymbol" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="22.0" layoutY="15.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="id1" layoutX="21.0" layoutY="208.0" onMouseClicked="#clickNumber" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="20.0" layoutY="15.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="id2" layoutX="89.0" layoutY="208.0" onMouseClicked="#clickNumber" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="20.0" layoutY="15.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="id3" layoutX="160.0" layoutY="208.0" onMouseClicked="#clickNumber" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="20.0" layoutY="15.0" text="3" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnMultiply" layoutX="231.0" layoutY="208.0" onMouseClicked="#clickSymbol" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="21.0" layoutY="15.0" text="*" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnClear" layoutX="21.0" layoutY="267.0" onMouseClicked="#clickSymbol" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="19.0" layoutY="15.0" text="C" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="id0" layoutX="89.0" layoutY="267.0" onMouseClicked="#clickNumber" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="20.0" layoutY="15.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnEquals" layoutX="160.0" layoutY="267.0" onMouseClicked="#clickSymbol" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="20.0" layoutY="15.0" text="=" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btnDivide" layoutX="231.0" layoutY="267.0" onMouseClicked="#clickSymbol" prefHeight="50.0" prefWidth="50.0" styleClass="btnPane">
+               <children>
+                  <Label layoutX="22.0" layoutY="15.0" text="/" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="65.0" prefWidth="274.0" styleClass="btnPane">
+               <children>
+                  <Label fx:id="idResultLbl" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="12.0" prefHeight="42.0" prefWidth="243.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Button layoutX="482.0" layoutY="550.0" mnemonicParsing="false" onAction="#clickBack" prefHeight="39.0" prefWidth="96.0" text="Vissza">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="IdCaloriesTblView" layoutX="309.0" layoutY="13.0" prefHeight="529.0" prefWidth="289.0">
+        <columns>
+          <TableColumn fx:id="IdProductTblCol" prefWidth="64.0" text="Termék" />
+          <TableColumn fx:id="IdProteinTblCol" prefWidth="75.0" text="Fehérje(g)" />
+            <TableColumn fx:id="IdCarbsTblCol" prefWidth="98.0" text="Szénhidrát(g)" />
+            <TableColumn fx:id="IdFatTblCol" prefWidth="49.0" text="Zsir(g)" />
+        </columns>
+      </TableView>
+      <Label fx:id="idDivideByZero" layoutX="309.0" layoutY="560.0" prefHeight="20.0" prefWidth="143.0" textFill="#d30d0d" />
+      <Button layoutX="252.0" layoutY="163.0" mnemonicParsing="false" onAction="#clickAddProtein" text="+" />
+      <Label layoutX="21.0" layoutY="168.0" prefHeight="20.0" prefWidth="81.0" text="Fehérje:" />
+      <Label layoutX="21.0" layoutY="203.0" prefHeight="20.0" prefWidth="81.0" text="Szénhidrát:" />
+      <Label layoutX="21.0" layoutY="237.0" prefHeight="20.0" prefWidth="81.0" text="Zsír:" />
+      <Label layoutX="21.0" layoutY="137.0" prefHeight="27.0" prefWidth="135.0" text="Összesen: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="252.0" layoutY="198.0" mnemonicParsing="false" onAction="#clickAddCarb" text="+" />
+      <Button layoutX="252.0" layoutY="232.0" mnemonicParsing="false" onAction="#clickAddFat" text="+" />
+      <Label fx:id="idProteinLbl" alignment="CENTER_RIGHT" layoutX="123.0" layoutY="169.0" prefHeight="20.0" prefWidth="35.0" text="0" />
+      <Label fx:id="idCarbLbl" alignment="CENTER_RIGHT" layoutX="123.0" layoutY="204.0" prefHeight="20.0" prefWidth="35.0" text="0" />
+      <Label fx:id="idFatLbl" alignment="CENTER_RIGHT" layoutX="123.0" layoutY="238.0" prefHeight="20.0" prefWidth="35.0" text="0" />
+      <Label alignment="CENTER" layoutX="21.0" layoutY="40.0" prefHeight="53.0" prefWidth="274.0" text="Kalóriaszámolás">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

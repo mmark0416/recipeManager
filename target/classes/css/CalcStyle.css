@@ -1,0 +1,12 @@
+.mainPane {
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-border-color: #10000029;
+}
+
+.btnPane {
+    -fx-border-width: 2;
+    -fx-border-color: #10000029;
+    -fx-background-color: #10000025;
+    -fx-background-radius: 3;
+}
